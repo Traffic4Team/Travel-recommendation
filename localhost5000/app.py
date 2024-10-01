@@ -426,4 +426,6 @@ def select_day(driver, input_month, input_day):
             break
 
 if __name__ == '__main__':
-    app.run(debug=True)
+     port = int(os.environ.get('PORT', 10000))
+     
+     app.run(host='0.0.0.0', port=port)
